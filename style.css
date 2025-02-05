@@ -1,10 +1,15 @@
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     background-color: #0d0d0d;
     color: #b222222;
     text-align: center;
     margin: 0;
     padding: 0;
+}
+
+body{
+    backround: url('black-cat-rose.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
 
 header {
@@ -29,6 +34,11 @@ nav a {
     transition: 0.3s;
 }
 
+nav a:hover {
+    background: #800000;
+    border-radius: 5px;
+}
+
 section {
     margin: 30px auto;
     max-width: 800px;
@@ -50,11 +60,61 @@ section {
     box-shadow: 0px 4px 12px rgba(178, 34, 34, 0.7);
 }
 
+.button {
+    display: inline-block;
+    padding: 12px 20px;
+    margin-top: 10px;
+    background-color: #b22222;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+    border: 2px solid #800000;
+}
+
+.button:hover {
+    background-color: #800000;
+    box-shadow: 0px 4px 8px rgba(178, 34, 34, 0.7);
+}
+
 footer {
     margin-top: 20px;
     padding: 10px;
     background-color: #000;
     color: #b22222;
+}
+
+.cat-eyes {
+    font-size: 50px;
+    color: #ffcc00;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    animation: blink 4s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.petal {
+    position: fixed;
+    top: 0;
+    width: 12px;
+    height: 12px;
+    background: #b22222;
+    border-radius: 50%;
+    opacity: 0.7;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
 }
 
 @media (max-width: 600px) {
