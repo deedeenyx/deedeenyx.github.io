@@ -1,128 +1,49 @@
 body {
-    font-family: 'Cherry Bomb One', serif;
-    background-color: #0d0d0d;
-    color: #FFFFF;
-    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: white;
     margin: 0;
-    padding: 0;
-}
-
-body{
-    backround: url('black-cat-rose.jpg') no-repeat center center fixed;
-    background-size: cover;
+    text-align: center;
 }
 
 header {
-    background-color: #000;
-    color: #b22222;
+    background: #000;
     padding: 20px;
-    font-size: 28px;
-    font-weight: bold;
-    text-shadow: 2px 2px 10px #800000;
 }
 
-nav {
-    background: #1a1a1a;
-    padding: 10px;
+header h1 {
+    font-size: 2em;
+    color: #ffcc00;
 }
 
 nav a {
-    color: #b22222;
+    color: #ffcc00;
+    margin: 0 15px;
     text-decoration: none;
+}
+
+.hero {
+    background: url('images/black-cat-theme.jpg') no-repeat center center/cover;
+    padding: 100px 20px;
+}
+
+.cta-button {
+    background: #ffcc00;
     padding: 10px 20px;
-    display: inline-block;
-    transition: 0.3s;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-nav a:hover {
-    background: #800000;
-    border-radius: 5px;
-}
-
-section {
-    margin: 30px auto;
-    max-width: 800px;
-    padding: 20px;
-    background: #111;
-    box-shadow: 0px 4px 8px rgba(178, 34, 34, 0.4);
-    border-radius: 8px;
-}
-
-.gallery {
+.gallery-container {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
-.gallery img:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 4px 12px rgba(178, 34, 34, 0.7);
-}
-
-.button {
-    display: inline-block;
-    padding: 12px 20px;
-    margin-top: 10px;
-    background-color: #b22222;
-    color: white;
-    text-decoration: none;
-    border-radius: 20px;
-    font-weight: bold;
-    transition: 0.3s;
-    border: 2px solid #800000;
-}
-
-.button:hover {
-    background-color: #800000;
-    box-shadow: 0px 4px 8px rgba(178, 34, 34, 0.7);
-}
-
-footer {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #000;
-    color: #b22222;
-}
-
-.cat-eyes {
-    font-size: 50px;
-    color: #ffcc00;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    animation: blink 4s infinite;
-}
-
-@keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
-}
-
-.petal {
-    position: fixed;
-    top: 0;
-    width: 12px;
-    height: 12px;
-    background: #b22222;
-    border-radius: 50%;
-    opacity: 0.7;
-    animation: fall linear infinite;
-}
-
-@keyframes fall {
-    to {
-        transform: translateY(100vh);
-        opacity: 0;
-    }
-}
-
-@media (max-width: 600px) {
-    .gallery {
-        flex-direction: column;
-    }
-    .gallery img {
-        width: 100%;
-        max-width: 300px;
-    }
+.gallery-container img {
+    width: 300px;
+    border-radius: 10px;
+    border: 3px solid #ffcc00;
 }
